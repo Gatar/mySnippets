@@ -1,0 +1,25 @@
+apply plugin: 'idea'
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+        resources {
+            srcDirs = ['src/resources']
+        }
+    }
+}
+
+dependencies{
+
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
+    compileOnly 'org.projectlombok:lombok:1.16.18'
+    compile group: 'com.google.guava', name: 'guava', version: 'r05'
+
+}

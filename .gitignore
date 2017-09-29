@@ -1,0 +1,9 @@
+
+#My Gatar
+.gradle/
+gradle.
+.idea/
+out/
+*.iml
+gradlew
+gradlew.bat
